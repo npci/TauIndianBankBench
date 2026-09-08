@@ -1,0 +1,69 @@
+cff-version: 1.2.0
+message: >-
+  If you use the indian_banking domain, please cite this benchmark together with
+  the tau2-bench and tau-bench papers it builds on.
+title: "TauIndianBankBench: an Indian retail-banking benchmark for tool-using conversational agents"
+abstract: >-
+  A tau2-bench domain in which a conversational agent staffs the chat desk of an
+  India-based retail bank: 1000 tasks across 50 families, 34 tools, a written
+  bank policy and a 24-document knowledge base. Episodes are scored strictly on
+  the final database state and on the required tool actions.
+type: software
+repository-code: "https://github.com/npci/TauIndianBankBench"
+version: "1.0.0"
+date-released: "2026-08-30"
+license: MIT
+keywords:
+  - tau2-bench
+  - conversational agents
+  - tool use
+  - benchmark
+  - banking
+authors:
+  - family-names: Adhikary
+    given-names: Krishanu
+    affiliation: "NPCI AI Research Team"
+  - family-names: Devadiga
+    given-names: Prashant
+    affiliation: "NPCI AI Research Team"
+
+references:
+  - type: article
+    title: "tau^2-Bench: Evaluating Conversational Agents in a Dual-Control Environment"
+    year: 2025
+    notes: "arXiv:2506.07982"
+    url: "https://arxiv.org/abs/2506.07982"
+    authors:
+      - family-names: Barres
+        given-names: Victor
+      - family-names: Dong
+        given-names: Honghua
+      - family-names: Ray
+        given-names: Soham
+      - family-names: Si
+        given-names: Xujie
+      - family-names: Narasimhan
+        given-names: Karthik
+
+  - type: article
+    title: "tau-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains"
+    year: 2024
+    notes: "arXiv:2406.12045"
+    url: "https://arxiv.org/abs/2406.12045"
+    authors:
+      - family-names: Yao
+        given-names: Shunyu
+      - family-names: Shinn
+        given-names: Noah
+      - family-names: Razavi
+        given-names: Pedram
+      - family-names: Narasimhan
+        given-names: Karthik
+
+  - type: software
+    title: "tau2-bench"
+    repository-code: "https://github.com/sierra-research/tau2-bench"
+    license: MIT
+    notes: "The benchmark harness this domain is built on."
+    authors:
+      - name: "Sierra Research"
