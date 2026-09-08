@@ -237,7 +237,7 @@ suggests. Run `--num-tasks 5` first, check the provider's usage, and extrapolate
 
 ## Reference results
 
-Seven models scored on the full 1,000-task split, each against the same user
+Six models scored on the full 1,000-task split, each against the same user
 simulator (MiniMax-M2.7), at temperature 0. The numbers are single pass (pass@1): every task
 is attempted once, with no retries and no best-of-n selection. The average
 reward is a pass rate, because each task scores 1 (all required actions made
@@ -255,7 +255,6 @@ stay flat across model size. Seq, Edge and Tools are the harder categories.
 | Agent model | All | Seq | Edge | Tools | Ctrl |
 |---|---|---|---|---|---|
 | Qwen3.8-27B | 0.849 | 0.921 | 0.774 | 0.757 | 0.848 |
-| MiniMax-M2.7 | 0.807 | 0.857 | 0.717 | 0.724 | 0.920 |
 | Gemma 4 31B | 0.776 | 0.868 | 0.718 | 0.559 | 0.821 |
 | Gemma 4 26B-A4B | 0.714 | 0.802 | 0.662 | 0.500 | 0.759 |
 | Gemma 4 12B | 0.699 | 0.732 | 0.639 | 0.533 | 0.929 |
