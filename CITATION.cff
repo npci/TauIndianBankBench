@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: >-
-  If you use the indian_banking domain, please cite this benchmark together with
-  the tau2-bench and tau-bench papers it builds on.
+  If you use the indian_banking domain, please cite the paper (preferred-citation)
+  together with the tau2-bench and tau-bench papers it builds on.
 title: "TauIndianBankBench: an Indian retail-banking benchmark for tool-using conversational agents"
 abstract: >-
   A tau2-bench domain in which a conversational agent staffs the chat desk of an
@@ -26,6 +26,20 @@ authors:
   - family-names: Devadiga
     given-names: Prashant
     affiliation: "NPCI AI Research Team"
+
+preferred-citation:
+  type: article
+  title: "TauIndianBankBench: Procedure-Aware, Action-Oriented Evaluation of Tool-Using Conversational Agents"
+  year: 2026
+  notes: "arXiv:2610.30161"
+  url: "https://arxiv.org/abs/2610.30161"
+  authors:
+    - family-names: Adhikary
+      given-names: Krishanu
+      affiliation: "NPCI AI Research Team"
+    - family-names: Devadiga
+      given-names: Prashant
+      affiliation: "NPCI AI Research Team"
 
 references:
   - type: article

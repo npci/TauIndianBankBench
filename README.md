@@ -4,6 +4,7 @@
 [![Licence: MIT](https://img.shields.io/badge/licence-MIT-green)](LICENSE)
 [![Dataset on Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20dataset-NPCI%2Ftau--indian--banking-yellow)](https://huggingface.co/datasets/NPCI/tau-indian-banking)
 [![Built on tau2-bench](https://img.shields.io/badge/built%20on-tau2--bench-lightgrey)](https://github.com/sierra-research/tau2-bench)
+[![Paper on arXiv](https://img.shields.io/badge/arXiv-2610.30161-b31b1b)](https://arxiv.org/abs/2610.30161)
 
 The benchmark measures how well a language model handles a bank's customer chat.
 The model under test plays the bank's assistant. A second model plays the
@@ -22,7 +23,8 @@ The suite has 1000 such tasks over a synthetic bank, and the repository is
 self-contained: it bundles the domain, the task suite and the
 [tau2-bench](https://github.com/sierra-research/tau2-bench) harness it is built
 on. Installing it gives you a `tau2` command that runs and scores the benchmark
-against any OpenAI-compatible endpoint.
+against any OpenAI-compatible endpoint. The benchmark is described in the paper
+[TauIndianBankBench: Procedure-Aware, Action-Oriented Evaluation of Tool-Using Conversational Agents](https://arxiv.org/abs/2610.30161).
 
 All data in this benchmark is synthetic and the benchmark is for research and
 evaluation only; see the [disclaimer](DISCLAIMER.md).
@@ -378,18 +380,19 @@ domain, its tasks and data are released by their authors under the same licence.
 
 ## Citation
 
-If you use this benchmark, please cite it together with the tau2-bench and
+If you use this benchmark, please cite the paper together with the tau2-bench and
 tau-bench papers it builds on. `CITATION.cff` carries the same entries in
 machine-readable form.
 
 ```bibtex
-@software{npci2026tauindianbankbench,
-  title   = {TauIndianBankBench: an Indian retail-banking benchmark for tool-using conversational agents},
-  author  = {Adhikary, Krishanu and Devadiga, Prashant},
-  organization = {NPCI AI Research Team},
-  year    = {2026},
-  version = {1.0.0},
-  note    = {A $\tau^2$-bench domain: 1000 tasks across 50 scenario families, 34 tools, strict end-state scoring}
+@misc{adhikary2026tauindianbankbench,
+  title         = {TauIndianBankBench: Procedure-Aware, Action-Oriented Evaluation of Tool-Using Conversational Agents},
+  author        = {Krishanu Adhikary and Prashant Devadiga},
+  year          = {2026},
+  eprint        = {2610.30161},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2610.30161}
 }
 
 @misc{barres2025tau2bench,
